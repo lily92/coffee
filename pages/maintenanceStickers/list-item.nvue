@@ -1,0 +1,87 @@
+<template>
+	<view class="">
+		<!-- <view class="item" @click="click">
+			<view class="item-img">
+				<image src="../../static/images/maintenanceStickers/img.jpg" mode="widthFix" class="w100"></image>
+			</view>
+			<view class="item-con fon33">
+				设备使用指南
+			</view>
+			<navigator class="icon-more">
+				<image src="../../static/images/common/icon-right.png" mode="widthFix" class="icon-more"></image>
+			</navigator>
+		</view> -->
+
+		<view class="video-item">
+			<view class="positionr">
+				<image src="../../static/images/maintenanceStickers/video-master.jpg" mode="widthFix" class="w100 video-img"></image>
+				<view class="positionb-w video-player"><image src="../../static/images/maintenanceStickers/video-icon.png" mode="" class="video-icon"></image></view>
+			</view>
+			<view class="fon34 tui-center padding30">设备使用指南</view>
+		</view>
+	</view>
+</template>
+
+<script>
+export default {
+	props: {
+		listItem: {
+			type: Object,
+			default: function(e) {
+				return {};
+			}
+		}
+	},
+	methods: {
+		click() {
+			this.$emit('click');
+		},
+		close(e) {
+			e.stopPropagation();
+			this.$emit('close');
+		}
+	}
+};
+</script>
+
+<style scoped lang="scss">
+.item {
+	padding: 0 0 40rpx 0;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 40rpx;
+	align-items: center;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+}
+.item-con {
+	width: calc(100% - 330rpx);
+}
+.item-img {
+	width: 206rpx;
+	height: 140rpx;
+}
+.icon-more {
+	width: 84rpx;
+	height: 84rpx;
+}
+
+.video-item {
+	margin-bottom: 35rpx;
+}
+.video-img {
+	width: 100%;
+	height: 360rpx;
+	background: #e4e4e4;
+}
+.video-player {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.video-icon {
+	width: 150rpx;
+	height: 150rpx;
+}
+</style>

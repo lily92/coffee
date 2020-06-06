@@ -1,0 +1,8 @@
+unpackage/
+# production  打包文件
+/build
+
+# misc 
+.DS_Store
+
+

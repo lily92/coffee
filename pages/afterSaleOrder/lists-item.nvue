@@ -1,0 +1,82 @@
+<template>
+	<view class="bgf item item-list">
+	 <!-- itemlist -->
+	<view class=" padding-tb30  tui-flex tui-vertical-center tui-align-between order-state margin-b20 ">
+		<text>2020-04-22   11:25</text>
+		<text>{{productItem.od_state_str}}</text>
+	</view>
+	<!-- product-item  -->
+	<product-item class="" :productItem='productItem' ></product-item>
+	<!-- product item -->
+		  
+	 <!-- btn group -->
+	<after-order-btngroup  class="padding-t30" :orderState='productItem.od_state' ></after-order-btngroup>
+	 <!-- end btn group -->
+	 <!--end itemlist -->
+	</view>
+</template>
+<script>
+	import productItem from '@/components/my/productItem.vue'
+	import afterOrderBtngroup from '@/components/my/afterOrderBtnGroup';
+	export default {
+		props: {
+			productItem: {
+				type: Object,
+				default: function(e) {
+					return {}
+				}
+			},
+		},
+		data() {
+			return {
+				delivery: true,
+				list: [{
+						'img': ''
+					},
+					{
+						'img': ''
+					}
+				]
+			}
+		},
+		components:{
+			productItem,
+			afterOrderBtngroup
+		},
+		mounted() {
+			console.log(this.newsItem)
+			console.log(this.typeid)
+		},
+		methods: {
+			clipboard(data){
+				this.$emit('clipboard',data);
+			},
+			click() {
+				this.$emit('click');
+			},
+			setState(index,state){
+				this.$emit('setState',index,state);
+			},
+			goPay(od_id){
+				this.$emit('goPay',od_id);
+			},
+			close(e) {
+				e.stopPropagation();
+				this.$emit('close');
+			},
+			
+		}
+	}
+</script>
+
+<style lang="scss" scoped>
+	.item{ padding: 20rpx; margin-top: 20rpx;}
+	.desc-con{ padding-top: 10rpx;}
+	.item-list{
+		margin-bottom: 5rpx;
+		.order-state{ border-bottom: 1rpx solid $border-color}
+		.img{ width: 187rpx;}
+		.desc{ width: 470rpx; align-content: space-between;}
+		.margin-r20{  margin-right: 20rpx;}
+	}
+</style>

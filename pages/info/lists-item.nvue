@@ -1,0 +1,68 @@
+<template>
+	<view class="bgf item">
+	  <view class="title  tui-flex tui-align-between tui-vertical-center">
+	  	<view class="fon34">
+	  		订单通知
+	  	</view>
+		<view class="fon20 color9">
+			2020-01-01 12:12:33
+		</view>
+	  </view>
+	  <view class="fon26 color6 desc-con">
+	  	您的订单已成功发货，请耐心等待物流运输。
+	  </view>
+	</view>
+</template>
+
+<script>
+	export default {
+		props: {
+			newsItem: {
+				type: Object,
+				default: function(e) {
+					return {}
+				}
+			},
+		},
+		data() {
+			return {
+				delivery: true,
+				list: [{
+						'img': ''
+					},
+					{
+						'img': ''
+					}
+				]
+			}
+		},
+		mounted() {
+			console.log(this.newsItem)
+			console.log(this.typeid)
+		},
+		methods: {
+			clipboard(data){
+				this.$emit('clipboard',data);
+			},
+			click() {
+				this.$emit('click');
+			},
+			setState(index,state){
+				this.$emit('setState',index,state);
+			},
+			goPay(od_id){
+				this.$emit('goPay',od_id);
+			},
+			close(e) {
+				e.stopPropagation();
+				this.$emit('close');
+			},
+			
+		}
+	}
+</script>
+
+<style lang="scss" scoped>
+	.item{ padding: 20rpx; margin-top: 20rpx;}
+	.desc-con{ padding-top: 10rpx;}
+</style>

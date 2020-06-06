@@ -1,0 +1,284 @@
+{
+	"pages": [
+		{
+			"path": "pages/news/news",
+			"style": {
+				"navigationBarTitleText": "咖客联盟"
+			}
+		},
+		{
+			"path": "pages/menber/menber",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+		    "path" : "pages/qa/qa",
+		    "style" : {
+				"navigationBarTitleText": "问答"
+			
+			}
+		}, {
+			"path": "pages/parts/parts",
+			"style": {}
+		}, {
+			"path": "pages/selectedProducts/selectedProducts",
+			"style": {
+				"navigationBarTitleText": "精选产品"
+			}
+		}
+
+        ,{
+            "path" : "pages/qa-detail/qa-detail",
+            "style" : {
+				"navigationBarTitleText": "问答",
+				"navigationBarBackgroundColor": "#f7f7f7"
+			}
+        }
+        ,{
+            "path" : "pages/info/info",
+            "style" : {
+				"navigationBarTitleText": "消息"
+			}
+        }
+        ,{
+            "path" : "pages/personalData/personalData",
+            "style" : {
+				"navigationBarTitleText": "个人资料",
+				"navigationBarBackgroundColor": "#fcfcfc"
+			}
+        }
+        ,{
+            "path" : "pages/personalInfo/personalInfo",
+            "style" : {
+				"navigationBarTitleText": "个人资料"
+				
+			}
+        }
+        ,{
+            "path" : "pages/collection/collection",
+            "style" : {
+				"navigationBarTitleText": "收藏"
+				
+			}
+        }
+      
+        ,{
+            "path" : "pages/myOrder/myOrder",
+            "style" : {
+				"navigationBarTitleText": "我的订单"
+			}
+        }
+        ,{
+            "path" : "pages/orderDetail/orderDetail",
+            "style" : {
+				"navigationBarTitleText": "订单详情"
+			}
+        }
+        ,{
+            "path" : "pages/evaluate/evaluate",
+            "style" : {
+				"navigationBarTitleText": "评价",
+				"navigationBarBackgroundColor": "#fcfcfc"
+				
+			}
+        }
+        ,{
+            "path" : "pages/logistics/logistics",
+            "style" : {
+				"navigationBarTitleText": "物流信息"
+			}
+        }
+        ,{
+            "path" : "pages/myproduct/myproduct",
+            "style" : {
+				"navigationBarTitleText": "我的"
+			}
+        }
+        ,{
+            "path" : "pages/maintenanceTips/maintenanceTips",
+            "style" : {
+				"navigationBarTitleText": "保养贴士"
+			}
+        }
+        ,{
+            "path" : "pages/maintenanceVideo/maintenanceVideo",
+            "style" : {
+				"navigationBarTitleText": "保养视频"
+			}
+        }
+        ,{
+            "path" : "pages/equipmentAccessories/equipmentAccessories",
+            "style" : {
+				"navigationBarTitleText": "设备配件"
+			}
+        }
+        ,{
+            "path" : "pages/equipmentMaintenance/equipmentMaintenance",
+            "style" : {
+				"navigationBarTitleText": "设备维修"
+			}
+        }
+        ,{
+            "path" : "pages/equipmentMaintenance-d/equipmentMaintenance-d",
+            "style" : {
+				"navigationBarTitleText": "设备维修"
+			}
+        }
+        ,{
+            "path" : "pages/evaluate-equipment/evaluate-equipment",
+            "style" : {
+				"navigationBarTitleText": "评价"
+			}
+        }
+        ,{
+            "path" : "pages/afterSale/afterSale",
+            "style" : {
+				"navigationBarTitleText": "售后详情"
+			}
+        }
+        ,{
+            "path" : "pages/afterSale-apply/afterSale-apply",
+            "style" : {
+				"navigationBarTitleText": "申请售后"
+			}
+        }
+        ,{
+            "path" : "pages/afterSaleOrder/afterSaleOrder",
+            "style" : {
+				"navigationBarTitleText": "售后订单"
+			}
+        }
+        ,{
+            "path" : "pages/refundApplication/refundApplication",
+            "style" : {
+				"navigationBarTitleText": "退款申请"
+			}
+        }
+       
+        ,{
+            "path" : "pages/afterSale-detail/afterSale-detail",
+            "style" : {
+				"navigationBarTitleText": "售后详情"
+			}
+        }
+        ,{
+            "path" : "pages/equipmentMaintenanceOne/equipmentMaintenanceOne",
+            "style" : {
+				"navigationBarTitleText": "设备维修"
+			}
+        }
+        
+        ,{
+            "path" : "pages/videoPlayer/videoPlayer",
+            "style" : {
+				"navigationBarTitleText": "视频"
+			}
+        }
+        ,{
+            "path" : "pages/addDevice/addDevice",
+            "style" : {
+				"navigationBarTitleText": "添加设备"
+			}
+        }
+        ,{
+            "path" : "pages/addressList/addressList",
+            "style" : {
+				"navigationBarTitleText": "地址"
+			}
+        }
+        ,{
+            "path" : "pages/newDetail/newDetail",
+            "style" : {
+				"navigationBarTitleText": "资讯详情"
+			}
+        }
+        ,{
+            "path" : "pages/findStore/findStore",
+            "style" : {
+				"navigationBarTitleText": "查找门店"
+			}
+        }
+        ,{
+            "path" : "pages/cashier/cashier",
+            "style" : {
+				"navigationBarTitleText": "收银台"
+			}
+        }
+        ,{
+            "path" : "pages/cart/cart",
+            "style" : {
+				"navigationBarTitleText": "购物车"
+			}
+        } ,{
+            "path" : "pages/orderPlace/orderPlace",
+            "style" : {
+				"navigationBarTitleText": "提交订单"
+			}
+        }
+        
+        ,{
+            "path" : "pages/addressAdd/addressAdd",
+            "style" : {
+				"navigationBarTitleText": "地址管理"
+			}
+        }
+        ,{
+            "path" : "pages/productDetail/productDetail",
+            "style" : {
+				"navigationBarTitleText": "产品详情"
+			}
+        } ,{
+            "path" : "pages/classify/classify",
+            "style" : {
+				"navigationBarTitleText": "商品分类"
+			}
+        }
+        ,{
+            "path" : "pages/privacyClause/privacyClause",
+            "style" : {
+				"navigationBarTitleText": "隐私条款"
+			}
+        }
+    ],
+	"globalStyle": {
+		"backgroundTextStyle": "dark",
+		"navigationBarBackgroundColor": "#fcfcfc",
+		"navigationBarTitleText": "极客售后",
+		"navigationBarTextStyle": "black",
+		"backgroundColorTop": "#fcfcfc",
+		"backgroundColorBottom": "#fcfcfc"
+	},
+	"tabBar": { //底部菜单栏
+		"color": "#666666",
+		"selectedColor": "#dca360",
+		"backgroundColor": "#FFFFFF",
+		"list": [{
+				"pagePath": "pages/news/news",
+				"text": "资讯",
+				"iconPath": "static/images/common/icon-new.png",
+				"selectedIconPath": "static/images/common/icon-new-active.png"
+			}, {
+				"pagePath": "pages/parts/parts",
+				"text": "配件",
+				"iconPath": "static/images/common/icon-peijian.png",
+				"selectedIconPath": "static/images/common/icon-peijian-active.png"
+			},
+			{
+				"pagePath": "pages/menber/menber",
+				"text": "我的",
+				"iconPath": "static/images/common/icon-my.png",
+				"selectedIconPath": "static/images/common/icon-my-active.png"
+			}
+
+		]
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+}

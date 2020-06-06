@@ -1,0 +1,33 @@
+$color-org:#e96a1e;
+$color-f:#fff;
+$color-0:#000;
+$color-3:#333;
+$color-6:#666;
+$color-9:#999;
+$border-color:#ccc;
+
+
+
+
+page{ line-height: 1.7;}
+.w100{ width: 100%;}
+.border-circle{ border-radius: 50%;}
+.fon33{ font-size: 17px;}
+.fon26{ font-size: 13px;}
+.fon20{ font-size: 12px;}
+.fon30{ font-size: 15px;}
+.fon32{ font-size: 16px;}
+.fon34{ font-size: 17px;}
+.fon38{ font-size: 19px;}
+.fon42{ font-size: 21px;}
+.fon47{ font-size: 24px;}
+.colorf{ color: #fff;}
+.color6{ color: $color-6;}
+.color9{ color: $color-9;}
+
+uni-tabbar .uni-tabbar{ padding: 10rpx 0;}
+uni-tabbar .uni-tabbar-border{ height: 0;}
+.bg-org{ background: $color-org;}
+
+.cart .uni-checkbox-input-checked:before{ font-size: 28rpx !important;}
+
