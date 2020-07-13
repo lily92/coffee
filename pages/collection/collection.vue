@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<view class="info-num colorf fon26">
+		<view class="info-num colorf fon26  tui-flex">
 			已收藏
 			<b>4</b>
 			个产品
@@ -37,11 +37,13 @@ export default {
 	}
 };
 </script>
-
+<style  lang="scss">
+	page {
+		background: $color-f;
+	}
+</style>
 <style lang="scss" scoped>
-page {
-	background: $color-f;
-}
+
 .info-num {
 	background: $color-org;
 	padding: 60rpx 20px;

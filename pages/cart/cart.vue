@@ -63,7 +63,7 @@
 					<text class="color9">总件数：</text><text class="color6">{{totalBuyNum}}件</text>
 				</view>
 			</view>
-			<view class="fon34 colorf btn-submits tui-center">
+			<view @tap="pay" class="fon34 colorf btn-submits tui-center">
 				立即付款
 			</view>
 		</view>
@@ -181,6 +181,11 @@
 				setTimeout(() => {
 					this.calcHandle()
 				}, 0)
+			},
+			pay(){
+				uni.navigateTo({
+					url:'../orderPlace/orderPlace'
+				})
 			}
 		}
 	}

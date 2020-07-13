@@ -23,7 +23,8 @@
 			<!-- list -->
 			<view class="margin-b20 fon34 broder-b">退货商品</view>
 			<view class="margin-b50">
-				<view v-for="(item, index) in list" :key="index"><product-item :productItem="item" class="product-item"></product-item></view>
+				<view v-for="(item, index) in list" :key="index">
+					<product-item :isPaddding="isPaddding" :productItem="item" class="product-item"></product-item></view>
 			</view>
 
 			<!-- end list -->
@@ -93,7 +94,8 @@ export default {
 	data() {
 		return {
 			isshowYundan:false,
-			list: [{}, {}]
+			list: [{}, {}],
+			isPaddding:false
 		};
 	},
 	components: {

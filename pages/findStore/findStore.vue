@@ -69,11 +69,13 @@ export default {
 	}
 };
 </script>
-
+<style lang="scss">
+	page {
+		background: $color-f;
+	}
+</style>
 <style lang="scss" scoped>
-page {
-	background: $color-f;
-}
+
 .search-box {
 	border: 1px solid $border-color;
 	padding: 10rpx;

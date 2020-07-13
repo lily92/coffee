@@ -65,9 +65,11 @@
 	
 	}
 </script>
-
+<style lang="scss">
+	page{ background: $color-f;}
+</style>
 <style lang="scss"  scoped>
-page{ background: $color-f;}
+
 .img { width: 100rpx; height:100rpx}
 .qa-item-top{ padding: 20rpx; margin-bottom: 30rpx; border-bottom: 28rpx solid #F7F7F7;}
 .select-icon{ width: 40rpx;}

@@ -36,9 +36,10 @@
 		}
 	}
 </script>
-
+<style  lang="scss">
+	page{ background:#fff}
+</style>
 <style lang="scss" scoped>
-	page{ background: $color-f;}
 .right-icon{ width: 44rpx; height: 44rpx;}
 .item{ padding: 30rpx 0; border-bottom: 1px solid $border-color;}
 </style>

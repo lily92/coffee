@@ -49,9 +49,11 @@
 		}
 	}
 </script>
-
-<style lang="scss" scoped>
+<style  lang="scss">
 	page{ background: $color-f;}
+</style>
+<style lang="scss" scoped>
+	
 	.address-list{min-height: 80vh;}
 	.address-left{ width: calc(100% - 90rpx);}
 .address-icon{ width: 72rpx; height:72rpx; background: url(~@/static/images/icon-edit.png) no-repeat center; background-size: 36rpx;}

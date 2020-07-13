@@ -207,7 +207,7 @@
 			themeColor:{
 				type:String,
 				default(){
-					return "#f5a200"
+					return "#e96a1e"
 				}
 			},
 			startYear:{
@@ -535,6 +535,8 @@
 							defaultVal:[...this.pickVal],
 							result:this.resultStr
 						});
+						console.log(this.resultStr)
+						
 						break;
 				}
 				this.showPicker = false;
@@ -902,13 +904,16 @@
 						break;
 					case "selector":
 						let idx=0;
+						console.log('000')
 						data=[..._this.selectList];
+						
 						_this.selectList.map((v,k)=>{
 							if(v.label==this.defaultVal){
 								idx=k;
 							}
 						})
 						dVal=[idx];
+						console.log(_this.selectList)
 						break;
 					case "limit":
 						data=initPicker.limit.init(_this.dayStep,_this.startHour,_this.endHour,_this.minuteStep,_this.afterStep,this.defaultVal);

@@ -1,19 +1,18 @@
 <template>
 	<view>
-		<view class=" padding30 border-b  margin-b20"><product-item :productItem="productItem"></product-item></view>
+		<view class=" border-b  margin-b20 padding-tb30"><product-item :productItem="productItem"></product-item></view>
 		<view class="padding30 fon30">
-			<view class="tui-flex  tui-vertical-center tui-align-between border-b">
+			<view class="tui-flex tui-cell-arrow border-b  tui-vertical-center tui-align-between ">
 				<text class="">货物状态</text>
-				<view class="tui-flex tui-vertical-center" @tap="selectState(true)">
-					<text class="color9">请选择</text>
-					<view class="right-btn"></view>
+				<view class="color9 margin-r20" @tap="selectState(true)">
+					请选择
+					
 				</view>
 			</view>
-			<view class="tui-flex  tui-vertical-center tui-align-between border-b">
+			<view class="tui-flex tui-cell-arrow  tui-vertical-center tui-align-between border-b">
 				<text class="">退款原因</text>
-				<view class="tui-flex tui-vertical-center" @tap="selectReson(true)">
-					<text class="color9">请选择</text>
-					<view class="right-btn"></view>
+				<view class="color9 margin-r20" @tap="selectReson(true)">
+					请选择
 				</view>
 			</view>
 			<view class="tui-flex  tui-vertical-center tui-align-between border-b">
@@ -159,8 +158,7 @@ page {
 }
 .border-b {
 	border-bottom: 1px solid $border-color;
-	padding-bottom: 30rpx;
-	margin-bottom: 30rpx;
+	padding: 30rpx 0;
 }
 .refund-reson {
 	position: fixed;

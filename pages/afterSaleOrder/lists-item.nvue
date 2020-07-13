@@ -6,7 +6,7 @@
 		<text>{{productItem.od_state_str}}</text>
 	</view>
 	<!-- product-item  -->
-	<product-item class="" :productItem='productItem' ></product-item>
+	<product-item :isPaddding="isPaddding" class="" :productItem='productItem' ></product-item>
 	<!-- product item -->
 		  
 	 <!-- btn group -->
@@ -29,6 +29,7 @@
 		},
 		data() {
 			return {
+				isPaddding:false,
 				delivery: true,
 				list: [{
 						'img': ''

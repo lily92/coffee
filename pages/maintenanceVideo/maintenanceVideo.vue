@@ -6,13 +6,13 @@
 		</view>
 		<view class="info-list w100 padding-lr30">
 			
-		<view class="video-item"  v-for="(item,index) in infoList" :key="index">
+		<navigator :url="'../videoPlayer/videoPlayer?id='+item.id" class="video-item"  v-for="(item,index) in infoList" :key="index">
 			<view class="positionr">
 				<image src="../../static/images/maintenanceStickers/video-master.jpg" mode="widthFix" class="w100 video-img"></image>
 				<view class="positionb-w video-player"><image src="../../static/images/maintenanceStickers/video-icon.png" mode="" class="video-icon"></image></view>
 			</view>
 			<view class="fon34 tui-center padding30 bgf">设备使用指南</view>
-		</view>
+		</navigator>
 		</view>
 
 		<!--加载loadding-->

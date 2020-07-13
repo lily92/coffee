@@ -138,8 +138,8 @@
         "usingComponents" : true
     },
     "h5" : {
-        "title" : "魔体h5",
-        "domain" : "https://h5.020713.cn",
+        "title" : "咖啡售后",
+        "domain" : "https://gdhflw.com",
         // "domain" : "http://mdxum3.natappfree.cc",
         "devServer" : {
             "port" : 8080, //端口号
@@ -165,7 +165,7 @@
             }
         },
         "router" : {
-            "base" : "/public/partime/motih5"
+            "base" : "/public/partime/afterSale/"
         }
     }
 }

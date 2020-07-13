@@ -11,8 +11,8 @@
 		<!-- end list -->
 
 		<!--加载loadding-->
-		<tui-loadmore :visible="loadding" :index="3" type="primary"></tui-loadmore>
-		<tui-nomore :visible="!pullUpOn"></tui-nomore>
+		<tui-loadmore v-if="loadding"></tui-loadmore>
+		<tui-nomore v-if="!pullUpOn"></tui-nomore>
 		<!--加载loadding-->
 		<!-- end订单列表 -->
 	</view>
@@ -90,10 +90,13 @@ export default {
 	 */
 	onReachBottom: function() {
 		if (!this.pullUpOn) return;
-		this.loadding = true;
+		console.log(this.pageIndex)
+		this.loadding = false;
+		console.log(this.loadding)
 		if (this.pageIndex == 3) {
 			this.loadding = false;
 			this.pullUpOn = false;
+			
 		} else {
 			this.infoList = this.infoList.concat(this.loadData);
 			this.pageIndex = this.pageIndex + 1;

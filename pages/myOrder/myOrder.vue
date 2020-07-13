@@ -17,14 +17,14 @@
 		<!-- end 我的订单 -->
 
 		<!-- itemlist -->
-		<view class="item-list">
-			<view class="order-item" v-for="(item, index) in orderList" :key="index">
+		<view class="item-list w100">
+			<view class="order-item w100" v-for="(item, index) in orderList" :key="index">
 				<view class=" padding30  tui-flex tui-vertical-center tui-align-between order-state ">
 					<text>2020-04-22 11:25</text>
 					<text>{{ item.orderStateName }}</text>
 				</view>
 				<!-- product-item  -->
-				<product-item class="padding30" :productItem="item"></product-item>
+				<product-item  :productItem="item"></product-item>
 				<!-- product item -->
 				<view class="tui-text-right padding-lr30">
 					<text class="margin-r20">总量： 2件</text>
@@ -33,12 +33,14 @@
 				<!-- btn group -->
 				<order-btn
 					@cancel="cancel"
-					class="padding-lr30 padding-t30"
+					class=""
 					:orderState="item.orderState"
+					:item = 'item'
 					@pay="pay"
 					@comment="comment"
 					@readlogisitics="readlogisitics"
 					@afterSale="afterSale"
+					@confrim ='confrim'
 				></order-btn>
 				<!-- end btn group -->
 			</view>
@@ -112,7 +114,7 @@ export default {
 					orderTitle: '',
 					orderTime: '',
 					orderPrice: '200',
-					orderNumber: '',
+					orderNumber: '2020061202',
 					orderQuantity: 2
 				},
 				{
@@ -122,7 +124,7 @@ export default {
 					orderTitle: '',
 					orderTime: '',
 					orderPrice: '200',
-					orderNumber: '',
+					orderNumber: '2020061203',
 					orderQuantity: 2
 				},
 				{
@@ -132,7 +134,7 @@ export default {
 					orderTitle: '',
 					orderTime: '',
 					orderPrice: '200',
-					orderNumber: '',
+					orderNumber: '2020061204',
 					orderQuantity: 2
 				},
 				{
@@ -142,7 +144,7 @@ export default {
 					orderTitle: '',
 					orderTime: '',
 					orderPrice: '200',
-					orderNumber: '',
+					orderNumber: '2020061205',
 					orderQuantity: 2
 				}
 			],
@@ -180,7 +182,7 @@ export default {
 				}
 			}
 		},
-		cancel() {
+		cancel(item) {
 			console.log('确认取消订单');
 			uni.showModal({
 				title: '确认取消订单？',
@@ -193,23 +195,46 @@ export default {
 				}
 			});
 		},
-		pay() {
-			console.log('立即付款');
+		pay(item) {
+			console.log('立即付款,订单号：',item.orderNumber);
+			uni.navigateTo({
+				url: '../cashier/cashier'
+			});
 		},
-		comment() {
+		comment(item) {
 			console.log('评价');
 			uni.navigateTo({
 				url: '../evaluate/evaluate'
 			});
 		},
-		readlogisitics() {
+		readlogisitics(item) {
 			console.log('查看物流');
 			uni.navigateTo({
 				url: '../logistics/logistics'
 			});
 		},
-		afterSale() {
+		afterSale(item) {
 			console.log('申请售后');
+			uni.navigateTo({
+				url: '../afterSale-apply/afterSale-apply'
+			});
+		},
+		confrim(item){
+			console.log('确认收货');
+			console.log('确认收货');
+			uni.showModal({
+				title: '确认收货？',
+				content: '确认收货后货款直接打到卖家账户',
+				confirmColor:'#e96a1e',
+				success() {
+					uni.showToast({
+						icon: 'none',
+						
+						title: '收货成功',
+						
+					});
+				}
+			});
 		}
 	},
 	//页面相关事件处理函数--监听用户下拉动作
@@ -240,11 +265,13 @@ export default {
 	
 };
 </script>
-
+<style lang="scss">
+	page {
+		background: $color-f;
+	}
+</style>
 <style lang="scss" scoped>
-page {
-	background: $color-f;
-}
+
 .order-top {
 	padding: 40rpx 0;
 	border-bottom: 1px solid $border-color;

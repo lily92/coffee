@@ -4,7 +4,8 @@
 	  	<view class="top tui-flex tui-align-center padding-t30 margin-b50">
 	  		<view class="">
 	  			<view class="tui-flex">
-	  				<view class="icon-success margin-r20 positionr"></view>
+					 <icon class=" icon-success margin-r20 positionr" type="success" size="26" color='#e96a1e'/>
+	  				<!-- <view class="icon-success margin-r20 positionr"></view> -->
 	  				<view class="color-org">
 	  					<view class="fon40">需付款</view>
 	  					<view class="fon54">￥8008.00</view>
@@ -70,12 +71,7 @@ export default {
 page {
 	background: $color-f;
 }
-.icon-success {
-	width: 55rpx;
-	height: 55rpx;
-	background: url(../../static/images/icon-success.png) no-repeat center;
-	background-size: contain;
-}
+
 .icon-success::after {
 	display: block;
 	content: '';

@@ -1,5 +1,5 @@
 <template>
-	<view class=" tui-flex tui-align-between ">
+	<view class=" tui-flex tui-align-between " :class="isPaddding?'padding-lr30':''">
 		<view class="img">
 			<image src="../../static/images/product-large.jpg" mode="widthFix" class="w100"></image>
 		</view>
@@ -24,10 +24,13 @@
 	export default {
 		name: "productItem",
 		props:{
+			isPaddding:{
+				type:Boolean,
+				default:true
+			},
 			productItem:{
 				type: Object,
-				default: {
-				}
+				
 			}
 		}
 		}

@@ -12,9 +12,9 @@
 			</view>
 		</view>
 		
-		<view class="padding-lr30 padding-t30">
+		<view class=" padding-t30">
 			<!-- 地址 -->
-			<view class="address  tui-flex tui-vertical-center tui-align-between">
+			<view class="address padding-lr30  tui-flex tui-vertical-center tui-align-between">
 				<image class="address-img" src="../../static/images/icon-address.png" mode="widthFix"></image>
 				<view class="address-con">
 					<view class="">
@@ -32,13 +32,13 @@
 			<!-- end地址  -->
 			
 			<!-- list -->
-			<view v-for="(item,index) in list" :key="index">
-				<product-item :productItem='item' class="product-item"></product-item>
+			<view class="padding-lr30" v-for="(item,index) in list" :key="index">
+				<product-item :isPaddding="isPaddding" :productItem='item' class="product-item"></product-item>
 			</view>
 			<!-- end list -->
 			
 			<!-- detail -->
-			<view class="detail">
+			<view class="detail padding-lr30">
 				<view class="peisong tui-flex tui-align-between tui-vertical-center">
 					<text>配送</text>
 					<view class="tui-flex tui-vertical-center">
@@ -109,6 +109,7 @@
 	export default {
 		data() {
 			return {
+				isPaddding:false,
 				list:[
 					{
 					

@@ -38,7 +38,7 @@
 			</view>
 			<!-- end 描述相符度 -->
 			
-			<view class="btn-submit margin-t80">
+			<view class="btn-submit margin-t80 margin-b50">
 				确定
 			</view>
 		</view>
@@ -61,11 +61,13 @@ export default {
 	}
 };
 </script>
-
+<style lang="scss">
+	page {
+		background: #fff;
+	}
+</style>
 <style lang="scss" scoped>
-page {
-	background: #fff;
-}
+
 .img {
 	width: 188rpx;
 	height: 188rpx;

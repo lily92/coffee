@@ -10,16 +10,15 @@
 				<text class="fon22 color9">原价￥2500.00</text>
 			</view>
 
-			<view @tap="showGuiGe(true)" class="fon30 border-b tui-flex tui-vertical-center tui-align-between">
+			<view @tap="showGuiGe(true)" class="fon30 tui-cell-arrow border-b tui-flex tui-vertical-center tui-align-between">
 				<text>规格</text>
 				<view class="w550">格米莱CRM3200C咖啡机-灰色</view>
-				<view class="right-btn"></view>
+				
 			</view>
-			<view class="fon30 border-b tui-flex tui-vertical-center tui-align-between">
+			<navigator url="../addressList/addressList" class="fon30 tui-cell-arrow border-b tui-flex tui-vertical-center tui-align-between">
 				<text>配送</text>
-				<view class="w550">广东省广州市白云区</view>
-				<view class="right-btn"></view>
-			</view>
+				<view class="w550">广东省广州市白云区</view>			
+			</navigator>
 			<view class="fon30 border-b tui-flex tui-vertical-center tui-align-between">
 				<text>运费</text>
 				<view class="w550">免费</view>
